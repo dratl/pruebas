@@ -28,13 +28,17 @@ main {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.4rem;
     color: #333;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: #666;
+}
+
+p {
+    font-size: 1.2rem;
 }
 
 div, h3, h2, p {
