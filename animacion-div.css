@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 200px;
+  height: 100px;
+  position: relative;
+  background-color: #f0f0f0;
+  border: 1px solid red;
+  overflow: hidden;
+}
+
+.popup {
+  position: absolute;
+  top: 0;
+  left: -200px; /* empieza fuera del viewport */
+  width: 100px;
+  height: 100px;
+  background-color: #ff6f61;
+  animation: slideIn 5s ease-out forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(calc(100% + 100px)); /* se mueve completamente a la derecha */
+  }
+}
