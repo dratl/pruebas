@@ -1,3 +1,12 @@
+body {
+    background: #DCDCDC;
+}
+
+* { 
+box-sizing: border-box;
+font-family: serif;
+}
+
 .stack { 
 /* ↓ The flex context */ 
 display: flex; 
@@ -19,5 +28,15 @@ main {
 }
 
 h2 {
-    color: red;
+    font-size: 2rem;
+    color: #333;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+div, h3, h2, p {
+    /* border: 1px solid black;  Border to visualize layout */
 }
