@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Fonts</title>
+    <title>Web Safe Fonts</title>
     <style>
+
+        /* Generales*/
         :root {
+            font-size: 1.1rem;
             --space: 1rem;
         }
         * { 
@@ -15,6 +18,8 @@
             max-inline-size: 60ch;
             margin-inline: auto;
         }
+
+        /* Fuentes */
         .arial {
             font-family: Arial, sans-serif;
         }
@@ -30,6 +35,7 @@
         .courier {
             font-family: "Courier New", monospace;
         }
+
         /* Stack Formula */
         .stack { 
         /* ↓ The flex context */ 
@@ -45,20 +51,27 @@
         /* ↓ Top margin is only applied to successive elements */ 
             margin-block-start: var(--space, 1rem); 
         }
+
+        /* Custom */
         body {
-            background: #DCDCDC;
+            background: #eee;
+            margin-top: 2rem;
         }
-        h1, p {
+        h1 {
+            color: green;
+        }
+        p {
             color: #333;
         }
         h2 {
             color: #555;
         }
+
     </style>
 </head>
 <body>
     <main class="stack">
-        <h1>Web Fonts</h1>
+        <h1>Web Safe Fonts</h1>
 
             <div class="arial">
                 <h2>Arial sans-serif</h2>
