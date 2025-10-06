@@ -7,6 +7,11 @@ box-sizing: border-box;
 font-family: serif;
 }
 
+main {
+    max-inline-size: 60ch; 
+    margin-inline: auto; 
+}
+
 .stack { 
 /* ↓ The flex context */ 
 display: flex; 
@@ -20,11 +25,6 @@ margin-block: 0;
 .stack > * + * { 
 /* ↓ Top margin is only applied to successive elements */ 
 margin-block-start: var(--space, 1.5rem); 
-}
-
-main {
-    max-width: 60ch;
-    margin: auto;
 }
 
 h2 {
