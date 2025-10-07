@@ -1,7 +1,58 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<link rel="stylesheet" type="text/css" href="animacion-div.css">
-<title>Movemos un div fuera del main hacia la derecha.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movemos un div fuera del main hacia la derecha.</title>
+    <style>
+        :root {
+        font-size: 1.2rem;
+        }
+        * { 
+        box-sizing: border-box;
+        font-family: serif;
+        }
+        body {
+        background-color: #eeeeee;
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .main {
+        width: 200px;
+        height: 100px;
+        position: relative;
+        background-color: #ccc;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        }
+
+        .popup {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: -200px; /* empieza fuera del viewport */
+        width: 100px;
+        height: 100px;
+        background-color: #aaa;
+        color: #333;
+        animation: slideIn 2s ease-out forwards;
+        }
+
+        @keyframes slideIn {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(calc(100% + 100px)); /* se mueve completamente a la derecha */
+        }
+        }
+    </style>
 </head>
 <body>
 
