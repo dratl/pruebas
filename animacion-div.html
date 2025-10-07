@@ -6,11 +6,11 @@
     <title>Movemos un div fuera del main hacia la derecha.</title>
     <style>
         :root {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         }
         * { 
         box-sizing: border-box;
-        font-family: serif;
+        font-family: Georgia, 'Times New Roman', Times, serif;
         }
         body {
         background-color: #eeeeee;
@@ -36,12 +36,17 @@
         justify-content: center;
         align-items: center;
         top: 0;
-        left: -200px; /* empieza fuera del viewport */
-        width: 100px;
+        left: -100px; /* empieza fuera del viewport */
+        width: 200px;
         height: 100px;
         background-color: #aaa;
+        border-radius: 0.5rem;
         color: #333;
         animation: slideIn 2s ease-out forwards;
+        }
+
+        code {
+            font-weight: bold;
         }
 
         @keyframes slideIn {
@@ -49,7 +54,7 @@
             transform: translateX(-100%);
         }
         100% {
-            transform: translateX(calc(100% + 100px)); /* se mueve completamente a la derecha */
+            transform: translateX(calc(100% - 100px)); /* se mueve completamente a la derecha */
         }
         }
     </style>
@@ -57,7 +62,7 @@
 <body>
 
     <div class="main">
-    <div class="popup">¡Hola!</div>
+    <div class="popup"><code>;)</code></div>
     </div>    
 
 </body>
