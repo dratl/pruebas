@@ -113,11 +113,16 @@
                   }
                   return String(value);
                 },
-                color: '#000',
+                color: '#00',
+                font: { family: 'monospace' }
               },
               border: { display: false },
               grid: { display: false },
-              title: { display: true, text: 'Experience scores according to codecademy.com' }
+              title: { 
+                display: true, 
+                text: 'Skill scores by codecademy.com', 
+                font: { family: 'monospace' }
+              }
             },
             y: {
               // no mostrar nombres en eje Y
@@ -136,9 +141,11 @@
               align: 'center',
               offset: 12,
               formatter: (value, ctx) => names[ctx.dataIndex],
-              font: { weight: '400', size: 12 }
+              font: { family: 'monospace', weight: '400', size: 12 }
             },
             tooltip: {
+              titleFont: { family: 'monospace', weight: '400', size: 12 },
+              bodyFont: { family: 'monospace', weight: '100', size: 16 },
               enabled: true,
               callbacks: {
                 // mostrar nivel y puntaje en el tooltip
@@ -149,6 +156,18 @@
                 label: (ctx) => {
                   const idx = ctx.dataIndex;
                   return levels[idx] + ' — ' + Number(scores[idx]).toLocaleString();
+                },
+                // colorear el recuadro del tooltip según el nivel
+                labelColor: (ctx) => {
+                  const idx = ctx.dataIndex;
+                  const lvl = levels[idx];
+                  const map = {
+                    'Advanced': '#4CBB17',
+                    'Intermediate': '#62E425',
+                    'Beginner': '#7CE949'
+                  };
+                  const bg = map[lvl] || '#000';
+                  return { borderColor: '#000', backgroundColor: bg };
                 }
               }
             }
