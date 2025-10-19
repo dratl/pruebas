@@ -1,0 +1,64 @@
+Vamos a construir una gráfica de barras horizontales.
+
+El título es "Skills" y se encuentra dividido en cinco categorías con su nivel de experiencia y su puntaje: Web development (Advanced - 5818), JavaScript (Advanced - 3741), Computer Science (Beginner - 2616), Web Design (Advanced - 2610) y HTML & CSS (Intermediate - 1982). Vamos a utilizar la líbreria charts.js para construir la gráfica.
+
+El eje x representa los puntajes de experiencia y el eje y representa las categorías de habilidades.
+
+El nombre de la categoría no se muestra no se muestra fuera de la gráfica en el eje y, pero si muestra un icono representativo para cada categoría. Adjunto los svg para cada categoría.
+
+El nombre de la categoría se despliega dentro de la barra correspondiente, centrado horizontalmente y alineado a la izquierda
+
+Al hacer hover sobre cada barra, se muestra un tooltip con el nivel de experiencia y su puntaje.
+
+
+
+
+    Web development Skills Total 10,949 according to codecademy.com
+    
+    
+    JavaScript level
+    Advanced 3741
+
+        Create and deploy interactive applications with JavaScript.
+        Build interactive websites with JavaScript.
+        Manage state efficiently in Redux.
+        Create front-end web applications with React.
+        Implement interactive web components using JavaScript, DOM events, and Handlebars.
+
+    Computer science level
+    Beginner 2616
+
+        Implement data structures and algorithms in JavaScript.
+        Apply back-end development fundamentals for web development.
+        Implement fundamental coding concepts in JavaScript.
+        Manipulate the DOM with JavaScript.
+        Utilize collaboration tools in Git and GitHub.
+        Manage version control with Git and GitHub.
+
+    Web design level
+    Advanced 2610
+
+        Build and deploy responsive websites using HTML and CSS.
+        Implement responsive web design with CSS.
+        Apply color design principles with CSS.
+        Conduct generative user research in Miro.
+        Design interactive prototypes in Figma.
+        Design intuitive navigation systems in web development.
+        Implement component interactions in React.
+        Manipulate the DOM with JavaScript.
+        Optimize web applications in Advanced Web Development.
+        Redesign user experiences using interaction design principles.
+        Evaluate digital products in user research.
+        Apply visual design principles in web design.
+
+    HTML & CSS level
+    Intermediate 1982
+
+        Create responsive websites with CSS.
+        Create web pages using HTML and CSS.
+        Develop websites locally using web development tools.
+        Implement design principles to design websites.
+        Style web pages using CSS fundamentals.
+        Implement responsive design using intermediate CSS.
+        Structure web pages using HTML.
+        Optimize web applications in Advanced Web Development.
