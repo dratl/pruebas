@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Every Layout - The Cover</title>
+<style>
+    :root {
+        /* Define spacing variables */
+        --s1: 1rem;
+        font-size: 1.1rem;
+    }
+    * {
+        box-sizing: border-box;
+        font-family: 'Courier New', Courier, monospace, serif;
+    }
+    body {
+        background-color: #eee;
+    }
+    main {
+        /* Set a maximum width and center the main content */
+        max-inline-size: 60ch;
+        margin: 0 auto;
+        padding: var(--s1);
+    }
+    .cover {
+        --space: var(--s1);
+        /* Establish a columnar flex context */
+        display: flex;
+        flex-direction: column;
+        /* Set a minimum height to match the viewport height */
+        min-block-size: 90vh;
+        /* Set a padding value */
+        padding: var(--space);
+
+        background-color: #ccc;
+    }
+
+    .cover > * {
+        /* Give each child a top and bottom margin */
+        margin-block: var(--s1);
+    }
+
+    .cover > :first-child:not(h1) {
+        /* Remove the top margin from the first child if it doesn't match the centered element */
+        margin-block-start: 0;
+    }
+
+    .cover > :last-child:not(h1) {
+        /* Remove the bottom margin from the last child if it doesn't match the centered element */
+        margin-block-end: 0;
+    }
+
+    .cover > h1 {
+        /* Center the centered element (h1 here) in the available vertical space */
+        margin-block: auto;
+        font-family: Georgia, serif;
+    }
+</style>
+  </style>
+</head>
+<body>
+
+<main>
+    <div class="cover">
+        <h1>La Opereta Treatale</h1>
+        <p>By Mr Lagrange Courash <br /> Buenos Aires</p>
+    </div>
+    <p>Vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
+    <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+</main>
+
+</body>
+</html> 
