@@ -13,10 +13,17 @@
     }
     * {
         box-sizing: border-box;
-        font-family: 'Courier New', Courier, monospace, serif;
     }
     body {
         background-color: #eee;
+        margin: 0;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #333;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
     }
     main {
         /* Set a maximum width and center the main content (main for our 2.0) */
@@ -50,7 +57,6 @@
     .cover > h1 {
         /* Center the centered element (h1 here) in the available vertical space */
         margin-block: auto;
-        font-family: Georgia, serif;
     }
     /* Stack Formula for the foot text */
     .stack { 
@@ -70,12 +76,19 @@
     /* Custom */
     .cover {
         background-color: #ccc;
+        border-radius: 0.25rem 0.25rem 0 0;
     }
     main .stack > p {
         background-color: #fff;
         padding: var(--s1);
         border-radius: 0.25rem;
         box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        font-size: 1rem;
+    }
+    h1 {
+        font-family: Georgia, serif;
+        font-size: 2rem;
+        line-height: 1.2;
     }
 </style>
   </style>
@@ -84,7 +97,7 @@
 
 <main>
     <div class="cover">
-        <h1>La Opereta Treatale</h1>
+        <h1>La Operetta Treatalle</h1>
         <p>By Don Lagrange Courashön <br /> Buenos Aires</p>
     </div>
     <div class="stack">
